@@ -1,0 +1,36 @@
+{
+  "patients": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Black",
+      "age": 32,
+      "illness":  "flu",
+      "queue_number": 1
+    },
+    {
+      "id": 2,
+      "firstName": "Kate",
+      "lastName": "Smith",
+      "age": 28,
+      "illness":  "flu",
+      "queue_number": 2
+    },
+    {
+      "id": 3,
+      "firstName": "Eddie",
+      "lastName": "Havoc",
+      "age": 27,
+      "illness":  "flu",
+      "queue_number": 3
+    },
+    {
+      "id": 4,
+      "firstName": "Malcolm",
+      "lastName": "Green",
+      "age": 23,
+      "illness":  "flu",
+      "queue_number": 4
+    }
+  ]
+}
