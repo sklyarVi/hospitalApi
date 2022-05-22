@@ -9,6 +9,11 @@
             "date": 1653229874446,
             "name": "logs/REST_DEMO2022-05-22-16.log",
             "hash": "99c7cd05547d039b80fa36664b8a68a8"
+        },
+        {
+            "date": 1653231666654,
+            "name": "logs/REST_DEMO2022-05-22-17.log",
+            "hash": "ce9b99988b6ae8d1c85b7a5d4c68796f"
         }
     ],
     "hashType": "md5"

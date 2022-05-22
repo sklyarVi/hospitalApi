@@ -1,0 +1,32 @@
+{
+  "doctors": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Black",
+      "specialization":  "Dermatology",
+      "queue_number": 1
+    },
+    {
+      "id": 2,
+      "firstName": "Kate",
+      "lastName": "Smith",
+      "specialization":  "Internal medicine",
+      "queue_number": 2
+    },
+    {
+      "id": 3,
+      "firstName": "Eddie",
+      "lastName": "Havoc",
+      "specialization":  "Internal medicine",
+      "queue_number": 3
+    },
+    {
+      "id": 4,
+      "firstName": "Malcolm",
+      "lastName": "Green",
+      "specialization":  "Pediatrics",
+      "queue_number": 4
+    }
+  ]
+}

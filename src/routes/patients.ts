@@ -1,6 +1,6 @@
 import express, {Request, Response} from "express";
 
-import dataNames from 'src/data/users.json';
+import dataNames from 'src/data/patients.json';
 
 export const readPatients = (req: Request, res: Response) => {
     res.json(dataNames.patients);

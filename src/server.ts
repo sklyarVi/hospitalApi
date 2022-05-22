@@ -3,7 +3,8 @@ import cors from 'cors'
 import helmet from 'helmet'
 import limit from 'express-rate-limit'
 
-import {readPatients, readPatient, addPatient, deletePatient, updatePatient} from "src/routes/users";
+import {readPatients, readPatient, addPatient, deletePatient, updatePatient} from "src/routes/patients";
+import {readDoctors, readDoctor, addDoctor, deleteDoctor, updateDoctor} from "src/routes/doctors";
 
 import { logger } from 'src/logger'
 import { TServer } from 'src/types/server.types'
@@ -29,12 +30,18 @@ export const startServer = ({ port, corsOptions }: TServer) => {
     server.get('/', (req, res) => {
         res.send('<h1> Welcome to our Hospital! </h1>')
     })
-
+// Patients
     server.get('/patients', readPatients)
     server.get('/patient/:id', readPatient)
     server.post('/patient/post', addPatient)
     server.delete('/patient/del/:id', deletePatient)
     server.put('/patient/update/:id', updatePatient)
+// Doctors
+    server.get('/doctors', readDoctors)
+    server.get('/doctor/:id', readDoctor)
+    server.post('/doctor/post', addDoctor)
+    server.delete('/doctor/del/:id', deleteDoctor)
+    server.put('/doctor/update/:id', updateDoctor)
 
     server.listen(port, () => {
         logger.info(`Server for ${config.name} ready at port ${port}`)
